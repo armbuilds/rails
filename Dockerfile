@@ -1,4 +1,4 @@
-FROM armbuilds/ruby:2.2
+FROM armbuilds/ruby
 
 # see update.sh for why all "apt-get install"s have to stay as one long line
 RUN apt-get update && apt-get install -y nodejs patch build-essential libmysqlclient-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
